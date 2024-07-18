@@ -1,0 +1,44 @@
+/*CSS foe available section  */
+
+.available-cars h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #333;
+  position: relative;
+  left: 50%;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.car-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.car-item p {
+  margin-bottom: 10px;
+  color: #555;
+}
