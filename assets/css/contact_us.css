@@ -1,0 +1,102 @@
+#contact-us {
+  padding: 50px 0;
+  background: #fff;
+}
+
+#contact-us .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact-us .page-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#contact-us .breadcrumb {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact-us .breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+#contact-us .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+#contact-us .contact-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contact-us .contact-form,
+#contact-us .contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-us .contact-form h2,
+#contact-us .contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#contact-us .contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-us .contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-us .contact-form .form-group input,
+#contact-us .contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact-us .contact-form .form-group textarea {
+  height: 100px;
+}
+
+#contact-us .contact-form .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-us .contact-form .btn:hover {
+  background: #218838;
+}
+
+#contact-us .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact-us .contact-info ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact-us .contact-info ul li i {
+  margin-right: 10px;
+  color: #007bff;
+}
