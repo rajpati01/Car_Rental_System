@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="#">Car Listing</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="search-login">
+            <input type="text" placeholder="Search" />
+            <button>Search</button>
+            <a href="#">Login / Signup</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End of Navigation Bar -->
+
+    <!-- Car listing Section -->
+    <section id="car-listing">
+      <div class="container">
+        <div class="side-search">
+          <div class="search-section">
+            <h2>Find Your Car</h2>
+            <form id="find-car-form">
+              <div class="form-group">
+                  <label for="brand">Select Brand</label>
+                  <select id="brand" name="brand">
+                      <option value="">All Brands</option>
+                      <option value="Maruti">Maruti</option>
+                      <option value="BMW">BMW</option>
+                      <option value="Toyota">Toyota</option>
+                      <option value="Nissan">Nissan</option>
+                      <option value="Audi">Audi</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="fuel">Select Fuel Type</label>
+                  <select id="fuel" name="fuel">
+                      <option value="">All Fuel Types</option>
+                      <option value="Petrol">Petrol</option>
+                      <option value="Diesel">Diesel</option>
+                      <option value="Electric">Electric</option>
+                  </select>
+              </div>
+              <button type="button" id="search-car">Search Car</button>
+          </form>
+          </div>
+
+          <div class="recently-listed">
+            <h2>Recently Listed Cars</h2>
+            <div class="recent-cars">
+              <div class="recent-car">
+                <img src="assets/images/MahindraXUV.jpg" alt="Maruti" />
+                <div class="recent-car-info">
+                  <h3>Maruti, Maruti Suzuki Vitara Brezza</h3>
+                  <p>$600 Per Day</p>
+                </div>
+              </div>
+              <div class="recent-car">
+                <img src="assets/images/toyota.jpg" alt="Toyota" />
+                <div class="recent-car-info">
+                  <h3>Toyota, Toyota Fortuner</h3>
+                  <p>$3000 Per Day</p>
+                </div>
+              </div>
+              <div class="recent-car">
+                <img src="assets/images/nissan_black.jpg" alt="Nissan Sunny" />
+                <div class="recent-car-info">
+                  <h3>Nissan, Nissan Sunny 2020</h3>
+                  <p>$400 Per Day</p>
+                </div>
+              </div>
+              <div class="recent-car">
+                <img src="assets/images/nissan_orange.jpg" alt="Nissan GT-R" />
+                <div class="recent-car-info">
+                  <h3>Nissan, Nissan GT-R</h3>
+                  <p>$2000 Per Day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-listings">
+          <h2 id="listing-count">6 Listings</h2>
+          <div class="car-listing-item car" data-brand="Maruti" data-fuel="Petrol">
+            <img src="assets/images/maruti.jpg" alt="Maruti Suzuki Wagon R" />
+            <div class="car-info">
+              <h3>Maruti, Maruti Suzuki Wagon R</h3>
+              <p>$500 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2019 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="car-listing-item car" data-brand="BMW" data-fuel="Petrol">
+            <img src="assets/images/bmw.jpg" alt="BMW 5 Series" />
+            <div class="car-info">
+              <h3>BMW, BMW 5 Series</h3>
+              <p>$1000 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2018 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="car-listing-item car" data-brand="Audi" data-fuel="Petrol">
+            <img src="assets/images/audi.jpg" alt="Audi Q8" />
+            <div class="car-info">
+              <h3>Audi, Audi Q8</h3>
+              <p>$3000 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2017 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="car-listing-item car" data-brand="Nissan" data-fuel="Petrol">
+            <img src="assets/images/nissan-kick.jpg" alt="Audi Q8" />
+            <div class="car-info">
+              <h3>Nissan, Nissan kicks</h3>
+              <p>$800 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2020 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="car-listing-item car" data-brand="Nissan" data-fuel="Petrol">
+            <img src="assets/images/nissan_orange.jpg" alt="Audi Q8" />
+            <div class="car-info">
+              <h3>Nissan, Nissan GT-R</h3>
+              <p>$2000 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2019 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+          </div>
+          <div class="car-listing-item car" data-brand="Toyota" data-fuel="Petrol">
+            <img src="assets/images/toyota.jpg" alt="Audi Q8" />
+            <div class="car-info">
+              <h3>Toyota, Toyota Fortuner</h3>
+              <p>$3000 Per Day</p>
+              <div class="car-details">
+                <span>5 seats</span>
+                <span>2020 model</span>
+                <span>Petrol</span>
+              </div>
+              <button>View Details</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENd of car listing section-->
+
+    <!-- Footer -->
+    <section class="footer">
+      <footer class="footer-container">
+        <div class="footer-top">
+          <div class="footer-column about-us">
+            <h3>ABOUT US</h3>
+            <ul>
+              <a href="#"><li>About Us</li></a>
+              <a href="faqs.html"><li>FAQs</li></a>
+              <a href="#"><li>Privacy</li></a>
+            </ul>
+          </div>
+          <div class="footer-column subscribe-newsletter">
+            <h3>SUBSCRIBE NEWSLETTER</h3>
+            <input type="email" placeholder="Enter Email Address" />
+            <button>Subscribe</button>
+            <p class="great-deal">
+              *We send great deals and latest news to our subscribed users every
+              week.
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Car Rental Portal</p>
+          <div class="footer-column social-icons">
+            <p>Connect with Us:</p>
+            <a href="#">
+              <img src="assets/images/icons/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="assets/images/icons/twitter.png" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="assets/images/icons/instagram.png" alt="Instagram" />
+            </a>
+            <!-- <img src="assets/images/icons/facebook.png" alt="YouTube" /> -->
+            <a href="#">
+              <img src="assets/images/icons/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+
+  <script src="assets/js/calrListing.js"></script>
+</html>
