@@ -209,3 +209,55 @@ nav ul li a {
   margin: 3px;
   margin-right: 8px;
 }
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .search-login {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .search-login input {
+    margin-bottom: 10px;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: 0.9em;
+  }
+
+  .hero-content .btn {
+    padding: 8px 15px;
+  }
+}

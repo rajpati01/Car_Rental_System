@@ -42,3 +42,16 @@
   margin-bottom: 10px;
   color: #555;
 }
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .car-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .car-item {
+    width: 100%;
+  }
+}

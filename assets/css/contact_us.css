@@ -100,3 +100,46 @@
   margin-right: 10px;
   color: #007bff;
 }
+
+/* responsiveness */
+@media (max-width: 768px) {
+  #contact-us .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-us .contact-form,
+  #contact-us .contact-info {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact-us .page-title {
+    font-size: 28px;
+  }
+
+  #contact-us .breadcrumb {
+    font-size: 14px;
+  }
+
+  #contact-us .contact-form h2,
+  #contact-us .contact-info h2 {
+    font-size: 20px;
+  }
+
+  #contact-us .contact-form .form-group input,
+  #contact-us .contact-form .form-group textarea {
+    padding: 8px;
+  }
+
+  #contact-us .contact-form .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact-us .contact-info ul li {
+    font-size: 14px;
+  }
+}
