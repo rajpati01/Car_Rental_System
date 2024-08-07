@@ -1,180 +1,178 @@
 /* car listing */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  .cointainer {
-    display: flex;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.cointainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -500px;
+}
+
+.side-search {
+  width: 30%;
+}
+.search-section,
+.recently-listed,
+.car-listings {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-listings {
+  position: relative;
+  left: 500px;
+  top: -775px;
+  width: 60%;
+}
+
+.search-section {
+  flex: 1 1 100%;
+  max-width: 300px;
+}
+
+.search-section h2 {
+  margin-bottom: 20px;
+}
+
+.search-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section select,
+.search-section button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-section button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-section button:hover {
+  background-color: #218838;
+}
+
+.recently-listed {
+  flex: 1 1 100%;
+  max-width: 300px;
+}
+
+.recently-listed h2 {
+  margin-bottom: 20px;
+}
+
+.recent-cars .recent-car {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.recent-car img {
+  width: 20px;
+  height: 20px;
+}
+
+.recent-car img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.recent-car-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-listings {
+  flex: 1 1 100%;
+}
+
+.car-listings h2 {
+  margin-bottom: 20px;
+}
+
+.car-listing-item {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-listing-item img {
+  width: 200px;
+  height: auto;
+}
+
+.car-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.car-info h3 {
+  margin: 0 0 10px;
+}
+
+.car-info p {
+  font-size: 18px;
+  color: #555;
+}
+
+.car-details {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.car-details span {
+  font-size: 14px;
+  color: #888;
+}
+
+.car-info button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.car-info button:hover {
+  background-color: #218838;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    margin-bottom: -500px;
+    padding: 10px;
   }
-  
-  .side-search {
-    width: 30%;
-  }
+
   .search-section,
   .recently-listed,
   .car-listings {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
   }
-  
-  .car-listings {
-    position: relative;
-    left: 500px;
-    top: -775px;
-    width: 60%;
-  }
-  
-  .search-section {
-    flex: 1 1 100%;
-    max-width: 300px;
-  }
-  
-  .search-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .search-section form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .search-section select,
-  .search-section button {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  .search-section button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .search-section button:hover {
-    background-color: #218838;
-  }
-  
-  .recently-listed {
-    flex: 1 1 100%;
-    max-width: 300px;
-  }
-  
-  .recently-listed h2 {
-    margin-bottom: 20px;
-  }
-  
-  .recent-cars .recent-car {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .recent-car img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .recent-car img {
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-    border-radius: 4px;
-  }
-  
-  .recent-car-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .car-listings {
-    flex: 1 1 100%;
-  }
-  
-  .car-listings h2 {
-    margin-bottom: 20px;
-  }
-  
+
   .car-listing-item {
-    display: flex;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
   }
-  
+
   .car-listing-item img {
-    width: 200px;
-    height: auto;
+    width: 100%;
   }
-  
-  .car-info {
-    padding: 20px;
-    flex: 1;
-  }
-  
-  .car-info h3 {
-    margin: 0 0 10px;
-  }
-  
-  .car-info p {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .car-details {
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  
-  .car-details span {
-    font-size: 14px;
-    color: #888;
-  }
-  
-  .car-info button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .car-info button:hover {
-    background-color: #218838;
-  }
-
-
-  /* responsiveness */
-@media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    .search-section,
-    .recently-listed,
-    .car-listings {
-      max-width: 100%;
-    }
-  
-    .car-listing-item {
-      flex-direction: column;
-    }
-  
-    .car-listing-item img {
-      width: 100%;
-    }
-  }
-  
+}
