@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="assets/css/signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup-card">
+        <img
+          src="assets/images/icons/favicon.png"
+          alt="car Logo"
+          class="logo"
+        />
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <label for="username">Username*</label>
+          <input type="text" id="username" name="username" required />
+          <div id="username-error" class="error-message"></div>
+
+          <label for="email">Email*</label>
+          <input type="text" id="email" name="email" required />
+          <div id="email-error" class="error-message"></div>
+
+          <label for="password">Password*</label>
+          <input type="password" id="password" name="password" required />
+          <div id="password-error" class="error-message"></div>
+
+          <label for="confirmPassword">Confirm Password*</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <div id="confirmPassword-error" class="error-message"></div>
+
+          <button type="submit" class="continue-btn">Sign Up</button>
+        </form>
+        <p class="signup">
+          Already have an account? <a href="login.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+    <script src="assets/js/signup.js"></script>
+  </body>
+</html>
